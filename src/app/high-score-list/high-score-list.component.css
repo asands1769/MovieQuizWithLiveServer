@@ -1,0 +1,22 @@
+.center {
+    text-align: center;
+    list-style-position: inside;
+    font-size: larger;
+    font-weight: bolder;
+    color:darkblue;
+    font-style:oblique;
+}
+.title {
+    text-align: center;
+    text-decoration: underline;
+    color:maroon;
+    font-style:italic;
+    font-weight:900;
+}
+/* Container Border */
+.container {
+    border: 12px solid #22b252;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    }

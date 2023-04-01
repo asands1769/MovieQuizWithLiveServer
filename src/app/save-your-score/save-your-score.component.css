@@ -1,0 +1,14 @@
+.form{
+    padding-top: 100px;
+    text-align: center;
+}
+.question {
+    font-style:oblique;
+    font-weight: 800;
+}
+.success1 {
+    color:darkgreen;
+    padding-top: 100px;
+    font-weight: 900;
+    font-size: x-large;
+}

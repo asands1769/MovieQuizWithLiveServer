@@ -1,0 +1,15 @@
+<div *ngIf="scoreSaved; else viewHighScore">
+<div class="form">
+<form #userInfo="ngForm" (ngSubmit)="onUserCreate(userInfo.value)">
+    <p class="question">What is your name?</p>
+    <input type="text" name="usersName" ngModel>
+    <input type="submit" value="SUBMIT"> 
+</form> 
+</div>
+</div>
+<ng-template #viewHighScore>
+    <body style="text-align: center;"> 
+        <p class="success1">Success!</p>
+        <button class="btn btn-primary" (click)="redirection()">View High Scores?</button>
+    </body>
+</ng-template>

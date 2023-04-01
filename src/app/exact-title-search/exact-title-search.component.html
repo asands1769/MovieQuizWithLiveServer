@@ -1,0 +1,40 @@
+<!-- <div  *ngIf="movieSearchList1.length == 0"> -->
+
+<div id="searchButton" class="bg-light bg-gradient">
+<div *ngIf="movieSearchList1.length == 0">
+<!-- <div class="input-group"> -->
+<div class="container">
+    <div class="text-center">
+      <p>Search by Title!  Will display a list of results.</p>
+  <input #movieSearch (keyup.enter)="searchMoviesExact(movieSearch.value)" type="search" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+  <button (click)="searchMoviesExact(movieSearch.value)" type="button" class="btn btn-outline-primary">Search</button>
+</div>
+</div>
+</div>
+<div id="lists"></div>
+<!-- <div id="lists" *ngIf="movieSearchList1.length > 0">
+    <div>
+        {{addLists()}}
+    </div>
+</div> -->
+
+</div>
+
+
+
+
+
+<!-- <div id="lists" *ngIf="movieSearchList1.length > 0">
+    <div *ngFor="let list of movieSearchList1">
+      {{addMovieTitle(list.title)}}
+      {{addReleaseYear(list.releaseYear)}}
+      {{addImages(list.itemUrl)}}
+    </div>
+  </div> -->
+<!-- <ol *ngFor = "let list of movieSearchList1">
+    <li id="titles">Title: {{list.title}}</li>
+    <li id="releaseYears">Release year: {{list.releaseYear}} {{addImages(list.imageUrl)}}</li>
+    <li id="image">{{addImages(list.imageUrl)}}</li>
+
+</ol> -->
+<!-- </div> -->

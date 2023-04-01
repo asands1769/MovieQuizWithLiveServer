@@ -1,0 +1,6 @@
+<div class="container">
+        <h1 class="title">HighScore List</h1>
+        <ol class="center">
+            <li *ngFor="let user of orderedUserList">{{user.name}} {{user.score}}/10</li>
+        </ol>
+</div>
