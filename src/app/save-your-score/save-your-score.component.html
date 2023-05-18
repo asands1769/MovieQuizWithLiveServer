@@ -1,15 +1,24 @@
-<div *ngIf="scoreSaved; else viewHighScore">
-<div class="form">
-<form #userInfo="ngForm" (ngSubmit)="onUserCreate(userInfo.value)">
-    <p class="question">What is your name?</p>
-    <input type="text" name="usersName" ngModel>
-    <input type="submit" value="SUBMIT"> 
-</form> 
+<div class="marginResetting">
+    <nav><a class="homeButton" routerLink="/home" routerLinkActive="active">Take Me Back Home!</a></nav>
+    <div class="positioning" *ngIf="scoreSaved; else viewHighScore">
+        <div style="text-align: center;">
+            <form #userInfo="ngForm" (ngSubmit)="onUserCreate(userInfo.value)">
+                <label for="usersName" class="question">What is your name?</label>
+                <div style="text-align: center;">
+                    <input class="form-control" type="text" name="usersName" ngModel>
+                </div>
+                <nav>
+                    <input class="submitButton" type="submit" value="SUBMIT"> 
+                </nav>
+            </form> 
+        </div>
+    </div>
+    <ng-template #viewHighScore>
+        <div style="text-align: center;"> 
+            <p class="success1">Success!</p>
+            <nav>
+            <button class="submitButton" (click)="redirection()">View High Scores?</button>
+            </nav>
+        </div>
+    </ng-template>
 </div>
-</div>
-<ng-template #viewHighScore>
-    <body style="text-align: center;"> 
-        <p class="success1">Success!</p>
-        <button class="btn btn-primary" (click)="redirection()">View High Scores?</button>
-    </body>
-</ng-template>

@@ -1,24 +1,45 @@
  /* Navigation link styles */
 
- nav a {
+ nav a, nav input {
     padding: 5px 10px;
     text-decoration: none;
     margin-top: 10px;
     display: inline-block;
-    background-color: #eee;
+    background-color: #3811e4;
     border-radius: 4px;
-    width:50%;
-    height: 100px;
     text-align:center;
     font-size:xx-large;
+    box-shadow: 5px 5px 6px #000;
   }
   nav a:visited, a:link {
-    color: #607D8B;
+    color: #68608b;
   }
   nav a:hover {
     color: #039be5;
-    background-color: #CFD8DC;
+    background-color: #4b2adf;
   }
   nav a.active {
     color: #039be5;
   }
+  nav button {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #3811e4;
+    border-radius: 4px;
+    text-align:center;
+    font-size:xx-large;
+    box-shadow: 5px 5px 6px #000;
+  }
+  nav button:visited, button:link {
+    color: #68608b;
+  }
+  nav button:hover {
+    color: #039be5;
+    background-color: #4b2adf;
+  }
+  nav button.active {
+    color: #039be5;
+  }
+

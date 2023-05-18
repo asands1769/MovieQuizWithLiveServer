@@ -70,17 +70,11 @@ getQuizQuestions(){
 
 populateQuizQuestions(){
   document.getElementById("buttons").style.visibility = "visible";
-  document.getElementById("test").style.backgroundColor = "rgb(211, 207, 207)";
-  document.getElementById("buttons").style.backgroundColor = "rgb(211, 207, 207)";
   let answer0 = document.getElementById("answer0");
   let answer1 = document.getElementById("answer1");
   let answer2 = document.getElementById("answer2");
   let answer3 = document.getElementById("answer3");
   let question = document.getElementById("Question");
-  answer0.style.width = "800px";
-  answer1.style.width = "800px";
-  answer2.style.width = "800px";
-  answer3.style.width = "800px";
   this.randomSelector = Math.floor(Math.random()*4)
   question.innerHTML = "Question " + (this.questionNumber + 1) + " of 10." + "  Which of the following movies match this description:   " + this.movieQuestions[this.questionNumber].description;
   let random1 = Math.floor(Math.random()*80);

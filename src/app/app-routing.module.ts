@@ -4,12 +4,14 @@ import { ExactTitleSearchComponent } from "./exact-title-search/exact-title-sear
 import { MovieQuizComponent } from "./movie-quiz/movie-quiz.component";
 import { SaveYourScoreComponent } from "./save-your-score/save-your-score.component";
 import { HighScoreListComponent } from "./high-score-list/high-score-list.component";
+import { HomepageComponent } from "./homepage/homepage.component";
 
 const routes: Routes = [
     {path: 'TitleSearch', component: ExactTitleSearchComponent},
     {path: 'Quiz', component: MovieQuizComponent},
     {path: 'SaveScore', component: SaveYourScoreComponent},
-    {path: 'HighScoreslist', component: HighScoreListComponent}
+    {path: 'HighScoreslist', component: HighScoreListComponent},
+    {path: 'home', component: HomepageComponent}
 ];
 
 @NgModule({

@@ -8,6 +8,7 @@ import { MovieQuizComponent } from './movie-quiz/movie-quiz.component';
 import { HighScoreListComponent } from './high-score-list/high-score-list.component';
 import { SaveYourScoreComponent } from './save-your-score/save-your-score.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HomepageComponent } from './homepage/homepage.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
     MovieQuizComponent,
     HighScoreListComponent,
     SaveYourScoreComponent,
+    HomepageComponent,
   ],
   imports: [
     BrowserModule,

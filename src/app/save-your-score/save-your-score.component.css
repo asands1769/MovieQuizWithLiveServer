@@ -1,4 +1,5 @@
-.form{
+
+.positioning{
     padding-top: 100px;
     text-align: center;
 }
@@ -10,5 +11,27 @@
     color:darkgreen;
     padding-top: 100px;
     font-weight: 900;
-    font-size: x-large;
+    font-size: 50px;
+}
+.marginResetting{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(248, 242, 255);
+}
+.form-control {
+    position: relative;
+    width: 30%;
+    align-items: center;
+    display: inline-block !important;
+}
+.submitButton{
+    color:rgb(255, 255, 255);
+    font-weight: bolder;
+}
+.homeButton {
+    color:rgb(255, 255, 255);
+    font-weight: bolder;
+    position: relative;
+    float: right;
 }
