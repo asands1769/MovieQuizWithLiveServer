@@ -22,7 +22,7 @@
       <div class="info" id="lists" *ngFor="let movie of movieSearchList1">
         <h1 class="title1">Title: {{movie.title}}</h1>
         <p style="font-size: 20px;">Year: {{movie.releaseYear}}</p>
-        <p style="font-size: 20px;">IMDB Rating: {{movie.rating}}/10</p>
+        <p style="font-size: 20px;">IMDB Rating: {{movie.rating/10}}/10</p>
       </div>
     </div>
   </div>
