@@ -1,40 +1,29 @@
 <!-- <div  *ngIf="movieSearchList1.length == 0"> -->
-
-<div id="searchButton" class="bg-light bg-gradient">
-<div *ngIf="movieSearchList1.length == 0">
+<div class="marginResetting">
+  <nav><a class="homeButton" routerLink="/home" routerLinkActive="active">Take Me Back Home!</a></nav>
+  <br><br><br>
+  <div id="searchButton" class="bg-light bg-gradient">
+    <div *ngIf="!searchBoolean" style="background-color: rgb(248, 242, 255);">
 <!-- <div class="input-group"> -->
-<div class="container">
-    <div class="text-center">
-      <p>Search by Title!  Will display a list of results.</p>
-  <input #movieSearch (keyup.enter)="searchMoviesExact(movieSearch.value)" type="search" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-  <button (click)="searchMoviesExact(movieSearch.value)" type="button" class="btn btn-outline-primary">Search</button>
-</div>
-</div>
-</div>
-<div id="lists"></div>
-<!-- <div id="lists" *ngIf="movieSearchList1.length > 0">
-    <div>
-        {{addLists()}}
+      <div class="container">
+        <div class="text-center">
+          <h1 class="info">Search by title!  Will display a list of results.</h1>
+  
+          <input class="form-control" #movieSearch (keyup.enter)="searchMoviesExact(movieSearch.value)" type="search" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+          <nav>
+            <button class="button" (click)="searchMoviesExact(movieSearch.value)" type="button" >Search</button>
+          </nav>
+        </div>
+      </div>
     </div>
-</div> -->
-
-</div>
-
-
-
-
-
-<!-- <div id="lists" *ngIf="movieSearchList1.length > 0">
-    <div *ngFor="let list of movieSearchList1">
-      {{addMovieTitle(list.title)}}
-      {{addReleaseYear(list.releaseYear)}}
-      {{addImages(list.itemUrl)}}
+    <div class="info" *ngIf="searchBoolean">
+      <nav><button class="button" (click)="searchAgain()">Search Again</button></nav>
+      <h2 class="results">Results:</h2>
+      <div class="info" id="lists" *ngFor="let movie of movieSearchList1">
+        <h1 class="title1">Title: {{movie.title}}</h1>
+        <p style="font-size: 20px;">Year: {{movie.releaseYear}}</p>
+        <p style="font-size: 20px;">IMDB Rating: {{movie.rating}}/10</p>
+      </div>
     </div>
-  </div> -->
-<!-- <ol *ngFor = "let list of movieSearchList1">
-    <li id="titles">Title: {{list.title}}</li>
-    <li id="releaseYears">Release year: {{list.releaseYear}} {{addImages(list.imageUrl)}}</li>
-    <li id="image">{{addImages(list.imageUrl)}}</li>
-
-</ol> -->
-<!-- </div> -->
+  </div>
+</div>
